@@ -51,11 +51,11 @@
             box-sizing: border-box;
             border: none;
             cursor: pointer;
-            background: #6e6e6e; /* Dark Silver */
+            background: #4A4A4A; /* Warna Dark Grey */
             font-weight: bold;
         }
         .button:hover {
-            background: #5a5a5a;
+            background: #3A3A3A; /* Warna Dark Grey Lebih Gelap */
         }
         .btn-content {
             display: flex;
@@ -86,10 +86,10 @@
     <img class="profile" src="https://fayzanina.github.io/assets/avatar.jpg" alt="Profil TikTok">
     <h2>Fayza Nina</h2>
 
-    <!-- Tombol Live TikTok dengan warna Dark Silver -->
+    <!-- Tombol Live TikTok dengan ikon Live -->
     <a class="button" href="https://www.tiktok.com/@fayzanina0" target="_blank">
         <div class="btn-content">
-            <img class="icon" src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok">
+            <img class="icon" src="https://fayzanina.github.io/assets/1742660204495.png" alt="Live TikTok">
             <span class="btn-text">Tonton Live TikTok Sekarang</span>
         </div>
     </a>
@@ -124,8 +124,27 @@
         </div>
     </a>
 
+    <!-- Tombol Copy ID FF Max -->
+    <button class="button" onclick="copyID()">
+        <div class="btn-content">
+            <img class="icon" src="https://play-lh.googleusercontent.com/EFJ23Wt96gAPfM29PBArvPci-SoaI0QbB8fO5G1x63NJIcp7M5HNi21HbLQtJBxRDR4=w480-h960-rw" alt="FF Max">
+            <span class="btn-text">Copy ID FF Max</span>
+        </div>
+    </button>
+
     <p class="copyright">© 2025 Fayza Nina. All rights reserved.</p>
 </div>
+
+<script>
+    function copyID() {
+        const idFF = "11250734672"; // ID FF Max
+        navigator.clipboard.writeText(idFF).then(() => {
+            alert("ID FF Max berhasil disalin: " + idFF);
+        }).catch(err => {
+            alert("Gagal menyalin ID. Silakan coba lagi.");
+        });
+    }
+</script>
 
 </body>
 </html>
