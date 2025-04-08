@@ -1,0 +1,6 @@
+{
+  "version": "6.8.2",
+  "title": "Update Tersedia",
+  "message": "Versi mod terbaru sudah tersedia. Yuk update untuk fitur terbaru!",
+  "url": "https://example.com/file.apk"
+}
